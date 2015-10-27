@@ -9,11 +9,11 @@ namespace DeckOfCardsGame
 {
     abstract class Deck
     {
-        List<Card> DeckCards;
+        protected List<Card> DeckCards;
 
-        List<Card> UsedCards;
+        protected List<Card> UsedCards;
 
-        int NumOfDecks;
+        protected int NumOfDecks;
 
         public Deck()
         {
@@ -23,19 +23,9 @@ namespace DeckOfCardsGame
             NumOfDecks = 0;
         }
 
-        public int cardsLeft()
-        {
-            return DeckCards.Count;
-        }
-
-        public int cardsUsed()
-        {
-            return UsedCards.Count;
-        }
-
         public Card dealCard()
         {
-            if (DeckCards.Count<=0)  throw new Exception("No cards are left in the deck.");
+            if (getNumOfCardsInDeck() <= 0)  throw new Exception("No cards are left in the deck.");
             Card CurrentCard = DeckCards[0];
             UsedCards.Add(CurrentCard);
             DeckCards.RemoveAt(0);
@@ -44,7 +34,7 @@ namespace DeckOfCardsGame
 
         public void shuffleCard()
         {
-            this.returnCard();
+            //this.returnCard();
             Random r = new Random();
             for (int i = DeckCards.Count - 1; i > 0; i--)
             {
@@ -70,6 +60,16 @@ namespace DeckOfCardsGame
         public int getNumOfDecks()
         {
             return NumOfDecks;
+        }
+
+        public int getNumOfCardsInDeck()
+        {
+            return DeckCards.Count;
+        }
+
+        public int getNumOfCardsUsed()
+        {
+            return UsedCards.Count;
         }
 
 

@@ -1,7 +1,18 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DeckOfCardsGame.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Author" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Guanlong Zhou</Value>
+    </Setting>
+    <Setting Name="Org" Type="System.String" Scope="User">
+      <Value Profile="(Default)">University of Missouri</Value>
+    </Setting>
+    <Setting Name="Year" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2015</Value>
+    </Setting>
+    <Setting Name="Site" Type="System.String" Scope="User">
+      <Value Profile="(Default)">www.WhoIsLong.com</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
